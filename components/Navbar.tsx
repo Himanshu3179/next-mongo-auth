@@ -14,8 +14,10 @@ export const Navbar = async () => {
             grid grid-cols-3 gap-5
             fixed top-0 left-0
         '>
-            <div className='flex justify-start'>
-                <ListTodo />
+            <div className='flex justify-start cursor-pointer '>
+                <Link href='/'>
+                    <ListTodo />
+                </Link>
 
             </div>
             <div className='flex gap-5 justify-center'>
