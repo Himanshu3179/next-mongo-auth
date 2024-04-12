@@ -132,7 +132,9 @@ const SignUpForm = () => {
                         )}
                     />
                 </div>
-                <Button className='w-full mt-6' type='submit'>
+                <Button className='w-full mt-6' type='submit'
+                    disabled={form.formState.isSubmitting}
+                >
                     Sign up
                 </Button>
             </form>

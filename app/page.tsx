@@ -9,7 +9,7 @@ const Home = async () => {
   )
 
   return (
-    <div>Hello {session?.user.name}</div>
+    <div>Hello {session?.user?.name}</div>
   )
 }
 export default Home;
