@@ -16,7 +16,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import GoogleSignInButton from '@/components/GoogleSignInButton';
 import { useRouter } from 'next/navigation'
-import { useToast } from '../ui/use-toast';
+import { useToast } from '@/components/ui/use-toast';
 const FormSchema = z
     .object({
         name: z.string().min(1, 'name is required').max(100),

@@ -11,6 +11,7 @@ const requestBodySchema = z.object({
 });
 
 export async function POST(request: NextRequest) {
+  console.log("EMAIL SENDING...");
   const session = await getServerSession(authOptions);
   const email = session?.user.email;
   const body = await request.json();
@@ -27,7 +28,7 @@ export async function POST(request: NextRequest) {
 
   const mailOptions: Mail.Options = {
     from: process.env.MY_EMAIL,
-    to: process.env.MY_EMAIL,
+    to: email || process.env.MY_EMAIL,
     subject: subject,
     text: `From: ${email}\n\n${message}`,
   };

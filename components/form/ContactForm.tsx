@@ -15,7 +15,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { redirect, useRouter } from 'next/navigation';
-import { useToast } from '../ui/use-toast';
+import { useToast } from '@/components/ui/use-toast';
 import { Textarea } from '../ui/textarea';
 
 const FormSchema = z.object({
